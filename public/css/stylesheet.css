@@ -2,37 +2,39 @@
 .red {
   background-color: red;
   border-color: red;
-  border-style: solid
 }
 
 .purple {
   background-color: purple;
   border-color: purple;
-  border-style: solid
 }
 
 .green {
   background-color: green;
   border-color: green;
-  border-style: solid
 }
 
-.rectangles {
+.card .rectangles {
   width:80px;
   height:125px;
   margin: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-left-style: solid;
 }
 
-.ovals {
+.card .ovals {
   width:80px;
   height: 125px;
   border-radius: 80px / 125px;
   margin: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-left-style: solid;
 }
 
 .diamonds {
   background-color: white;
-  /*background: white*/
   width: 0;
   height: 0;
   border-right-style: none;
@@ -45,6 +47,7 @@
 
 .empty {
   background-color:white;
+  border-left-style: double;
 }
 
 .solid {
