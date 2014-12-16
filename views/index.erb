@@ -1,0 +1,9 @@
+
+
+<% @board.cards.each do |card|%>
+<div class="card">
+  <%card.number.times do %>
+    <div class="<%=card.shape%> <%=card.color%>"></div>
+  <%end%>
+</div>
+<%end%>

@@ -40,7 +40,7 @@ class Deck
 end
 
 class Card
-  def initialize(color,shape,fill,number)
+  def initialize(color, shape, fill, number)
     @color = color
     @shape = shape
     @fill = fill
@@ -91,6 +91,3 @@ class Board
     false
   end
 end
-
-
-binding.pry

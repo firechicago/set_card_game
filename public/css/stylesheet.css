@@ -1,0 +1,58 @@
+
+.red {
+  background-color: red;
+  border-color: red;
+}
+
+.purple {
+  background-color: purple;
+  border-color: purple;
+}
+
+.green {
+  background-color: green;
+  border-color: green;
+}
+
+.rectangles {
+  width:80px;
+  height:125px;
+  margin: 10px;
+}
+
+.ovals {
+  width:80px;
+  height: 125px;
+  border-radius: 80px / 125px;
+  margin: 10px;
+}
+
+.diamonds {
+  background-color: white;
+  width: 0;
+  height: 0;
+  border-top: 62px solid transparent;
+  border-left-width: 80px;
+  border-left-style: solid;
+  border-bottom: 62px solid transparent;
+  margin: 5px;
+}
+
+
+.card {
+  float: left;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  height: 220px;
+  width: 300px;
+  background-color: white;
+  border: 7px solid black;
+  border-radius: 15px;
+  margin: 10px;
+  overflow: auto;
+}
+
+body {
+  display: inline;
+}
