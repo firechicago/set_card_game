@@ -2,16 +2,19 @@
 .red {
   background-color: red;
   border-color: red;
+  border-style: solid
 }
 
 .purple {
   background-color: purple;
   border-color: purple;
+  border-style: solid
 }
 
 .green {
   background-color: green;
   border-color: green;
+  border-style: solid
 }
 
 .rectangles {
@@ -29,8 +32,10 @@
 
 .diamonds {
   background-color: white;
+  /*background: white*/
   width: 0;
   height: 0;
+  border-right-style: none;
   border-top: 62px solid transparent;
   border-left-width: 80px;
   border-left-style: solid;
@@ -38,6 +43,17 @@
   margin: 5px;
 }
 
+.empty {
+  background-color:white;
+}
+
+.solid {
+
+}
+
+.striped {
+  opacity:.5;
+}
 
 .card {
   float: left;
