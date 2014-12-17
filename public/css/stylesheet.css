@@ -34,7 +34,6 @@
 }
 
 .diamonds {
-  background-color: white;
   width: 0;
   height: 0;
   border-right-style: none;
@@ -43,11 +42,25 @@
   border-left-style: solid;
   border-bottom: 62px solid transparent;
   margin: 5px;
+  background-color: white;
 }
 
 .empty {
   background-color:white;
-  border-left-style: double;
+}
+
+.diamonds.empty div{
+  width: 0;
+  height: 0;
+  border-right-style: none;
+  border-top: 52px solid transparent;
+  border-left-width: 65px;
+  border-left-style: solid;
+  border-bottom: 52px solid transparent;
+  position:relative;
+  top: -52px;
+  right: 74px;
+  border-left-color: white;
 }
 
 .solid {
@@ -63,15 +76,18 @@
   display: flex;
   justify-content: center;
   padding: 25px;
-  height: 220px;
+  height: 200px;
   width: 300px;
   background-color: white;
   border: 7px solid black;
   border-radius: 15px;
   margin: 10px;
-  overflow: auto;
 }
 
 body {
   display: inline;
+}
+
+.highlight {
+  background-color: yellow;
 }

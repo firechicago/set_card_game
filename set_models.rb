@@ -1,13 +1,13 @@
 require 'pry'
 
-Colors = [:green, :red, :purple]
-Shapes = [:rectangles, :diamonds, :ovals]
-Fills = [:solid, :empty, :striped]
-Numbers = [1, 2, 3]
-Attributes = [:color, :shape, :fill, :number]
+COLORS = [:green, :red, :purple]
+SHAPES = [:rectangles, :diamonds, :ovals]
+FILLS = [:solid, :empty, :striped]
+NUMBERS = [1, 2, 3]
+ATTRIBUTES = [:color, :shape, :fill, :number]
 
 def set?(card1, card2, card3)
-  Attributes.each do |attribute|
+  ATTRIBUTES.each do |attribute|
     c1 = card1.send(attribute)
     c2 = card2.send(attribute)
     c3 = card3.send(attribute)
@@ -22,10 +22,10 @@ class Deck
   attr_reader :cards
   def initialize
     @cards = []
-    Colors.each do |color|
-      Shapes.each do |shape|
-        Fills.each do |fill|
-          Numbers.each do |number|
+    COLORS.each do |color|
+      SHAPES.each do |shape|
+        FILLS.each do |fill|
+          NUMBERS.each do |number|
             @cards << Card.new(color, shape, fill, number)
           end
         end

@@ -1,9 +1,10 @@
 
-
-<% @board.cards.each do |card|%>
-<div class="card">
+<%index = 0%>
+<% session[:board].cards.each do |card|%>
+<div class="card" id="<%=index%>">
+  <%index += 1%>
   <%card.number.times do %>
-    <div class="<%=card.shape%> <%=card.color%> <%=card.fill%>"></div>
+    <div class="<%=card.shape%> <%=card.color%> <%=card.fill%>"><div></div></div>
   <%end%>
 </div>
 <%end%>

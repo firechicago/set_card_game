@@ -29,6 +29,33 @@
   <%= yield %>
 
 
+  <script>
 
+  Array.prototype.unique = function()
+  {
+    var n = [];
+    for(var i = 0; i < this.length; i++)
+      {
+        if (n.indexOf(this[i]) == -1) n.push(this[i]);
+      }
+      return n;
+    };
+
+  var selectedCards = []
+  $(".card").click(function() {
+    $(this).addClass("highlight");
+    selectedCards.push(this.id);
+    if (selectedCards.unique().length == 3) {
+      $.get(
+        "/guess",
+        {cards: selectedCards.unique()},
+        function(data) {
+          alert(data);
+          window.location.href = "/set"
+        }
+      )
+    }
+  });
+  </script>
 </body>
 </html>
