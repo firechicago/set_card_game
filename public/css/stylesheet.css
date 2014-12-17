@@ -91,3 +91,15 @@ body {
 .highlight {
   background-color: yellow;
 }
+
+.highlight .diamonds.empty div{
+  border-left-color: yellow;
+}
+
+.highlight .diamonds {
+  background-color: yellow;
+}
+
+.highlight .empty {
+  background-color: yellow;
+}
