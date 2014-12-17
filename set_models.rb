@@ -1,5 +1,3 @@
-require 'pry'
-
 COLORS = [:green, :red, :purple]
 SHAPES = [:rectangles, :diamonds, :ovals]
 FILLS = [:solid, :empty, :striped]
