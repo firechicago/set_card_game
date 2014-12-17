@@ -1,7 +1,6 @@
 require 'sinatra'
 require 'sinatra/reloader'
 require_relative 'set_models'
-require 'pry'
 
 enable :sessions
 use Rack::Session::Pool, expire_after: 2_592_000
