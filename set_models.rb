@@ -37,6 +37,10 @@ class Deck
   def draw
     @cards.pop
   end
+
+  def empty?
+    cards.length == 0
+  end
 end
 
 class Card
@@ -52,6 +56,7 @@ end
 
 class Board
   attr_accessor :cards
+  attr_reader :deck
 
   def initialize(deck)
     @cards = []
@@ -60,7 +65,7 @@ class Board
   end
 
   def draw_card
-    @cards << @deck.draw
+    @cards << deck.draw unless deck.empty?
   end
 
   def combinations
@@ -69,8 +74,12 @@ class Board
 
   def choose_set(index1, index2, index3)
     return "Not a set" unless set?(cards[index1], cards[index2], cards[index3])
-    [index1, index2, index3].each do |index|
-      cards[index] = @deck.draw
+    [index1, index2, index3].sort.reverse.each do |index|
+      unless deck.empty? || cards.length > 12
+        cards[index] = @deck.draw
+      else
+        cards.delete_at(index)
+      end
     end
     "Found a set"
   end
