@@ -12,3 +12,5 @@ Work to be done:<br>
 -force a 3x4 grid<br>
 -add levels where you take away attributes<br>
 -timed challenge/endless/puzzles<br>
+-if no sets flash “no sets” with button to “Add 3 cards"<br>
+-hint<br>
