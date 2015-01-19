@@ -3,7 +3,7 @@ set_card_game
 
 An implementation of the card game set.
 
-Check out the live version at http://launchersets.herokuapp.com
+Check out the live version at http://launcher-sets.herokuapp.com
 
 Work to be done:<br>
 -allow for deselecting cards<br>
