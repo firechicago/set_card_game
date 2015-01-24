@@ -2,6 +2,8 @@
 Launcher Sets
 =============
 Check out the live version at http://launcher-sets.herokuapp.com
+[![](http://i.imgur.com/6UZE0L8.png)](http://launcher-sets.herokuapp.com/)
+
 Launcher Sets is an implementation of the card game set for the purpose learning how to code.
 Visit the original set card game here: http://www.setgame.com/set/daily_puzzle
 
