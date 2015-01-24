@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/firechicago/set_card_game.png?label=ready&title=Ready)](https://waffle.io/firechicago/set_card_game)
 set_card_game
 =============
 
