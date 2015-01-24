@@ -2,8 +2,8 @@
 Launcher Sets
 =============
 
-Launcher sets is an implementation of the card game set.
-
+Launcher Sets is an implementation of the card game set for the purpose learning how to code.
+Visit the original set card game here: http://www.setgame.com/set/daily_puzzle
 
 Check out the live version at http://launcher-sets.herokuapp.com
 
