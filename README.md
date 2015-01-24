@@ -1,4 +1,4 @@
-[![Stories in Ready](https://badge.waffle.io/firechicago/set_card_game.png?label=ready&title=Ready)](https://waffle.io/firechica
+[![Stories in Ready](https://badge.waffle.io/firechicago/set_card_game.svg?label=ready&title=Ready)](http://waffle.io/firechicago/set_card_game)
 Launcher Sets
 =============
 
